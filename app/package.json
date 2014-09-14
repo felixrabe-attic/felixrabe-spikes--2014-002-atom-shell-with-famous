@@ -1,0 +1,7 @@
+{
+  "name": "famous-atom",
+  "version": "0.0.1",
+  "private": true,
+  "productName": "Famous Atom",
+  "main": "./src/index.js"
+}
