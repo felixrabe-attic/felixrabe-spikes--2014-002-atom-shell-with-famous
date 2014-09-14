@@ -15,18 +15,18 @@ define (require, exports, module) ->
       backgroundColor: 'yellow'
 
   stateModifier = new StateModifier
-    origin: [0.5, 0.5]
+    origin: [0, 0]
     align: [0.5, 0.5]
 
   mainContext.add(stateModifier).add(surface)
 
   spring =
     method: 'spring'
-    period: 1000
-    dampingRatio: 0.3
+    period: 1200
+    dampingRatio: 0.25
 
   stateModifier.setTransform(
-    Transform.rotate(0, 0, 1), spring
+    Transform.rotate(0, 0, 0.25 * Math.PI), spring
   )
 
   undefined
